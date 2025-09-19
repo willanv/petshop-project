@@ -41,3 +41,136 @@
     }
 }
 
+
+/* style da pagina "contato" */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-action-link {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.user-action-link img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.user-action-link span {
+    font-weight: bold;
+}
+
+.user-action-link:last-child img {
+    margin-right: 0;
+}
+
+.main-nav {
+    margin-top: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.page-title {
+    color: #333;
+    text-align: center;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
