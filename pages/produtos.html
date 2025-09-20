@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pelos & Patas</title>
+    <title>Produtos - Pelos & Patas</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="header-main">
+            <div class="logo">
+                <img src="../img/logo-azul.png" alt="Pet Shop Logo" />
+            </div>
+            <div class="search-bar">
+                <form action="/search" method="get" onsubmit="return false;">
+                    <input type="search" id="search-input" name="q" placeholder="O que você procura?">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <nav class="user-actions">
+                <a href="#" class="user-action-link">
+                    <img src="../img/img_header/usuario_logo.png" alt="Entrar">
+                    <span>Entrar</span>
+                </a>
+                <a href="#" class="user-action-link">
+                    <img src="../img/img_header/carrinho_logo.png" alt="Carrinho">
+                </a>
+            </nav>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="main-content">
+        <h1 class="page-title">Nossos Produtos</h1>
+        <div class="product-showcase">
+            <div class="product-card">
+                <img src="../img/img_produtos/areia-gato.png" alt="Areia para Gato">
+                <h3>Areia Higiênica para Gatos</h3>
+                <p class="price">R$ 25,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="../img/img_produtos/cantil.png" alt="Cantil">
+                <h3>Cantil de Água Portátil</h3>
+                <p class="price">R$ 15,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="../img/img_produtos/racao-pedigree-100g.png" alt="Ração Pedigree">
+                <h3>Ração Úmida Pedigree 100g</h3>
+                <p class="price">R$ 4,50</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="../img/img_produtos/racao-whiskas-85g.png" alt="Ração Whiskas">
+                <h3>Ração Úmida Whiskas 85g</h3>
+                <p class="price">R$ 4,50</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="../img/img_produtos/tapetes-higienicos.png" alt="Tapetes Higiênicos">
+                <h3>Tapetes Higiênicos (30 un.)</h3>
+                <p class="price">R$ 45,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const searchInput = document.getElementById('search-input');
+            const productCards = document.querySelectorAll('.product-card');
+
+            searchInput.addEventListener('input', () => {
+
+                const searchTerm = searchInput.value.toLowerCase();
+
+                productCards.forEach(card => {
+                    const productName = card.querySelector('h3').textContent.toLowerCase();
+
+                    if (productName.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
