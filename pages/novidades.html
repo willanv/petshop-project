@@ -8,20 +8,42 @@
 </head>
 
 <body>
-    <header>
-        <h1>Novidades - PetShop Pelos & Patas</h1>
-        <p>
-            Fique por dentro da abertura da nossa loja Física, lançamento e promoções para seu pet.
-        </p>
-        <nav>
+    <header class="site-header">
+        <div class="header-main">
+            <div class="logo">
+                <img src="../img/logo-azul.png" alt="Pet Shop Logo" />
+            </div>
+            <div class="search-bar">
+                <form action="/search" method="get" onsubmit="return false;">
+                    <input type="search" id="search-input" name="q" placeholder="O que você procura?">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <nav class="user-actions">
+                <a href="#" class="user-action-link">
+                    <img src="../img/img_header/usuario_logo.png" alt="Entrar">
+                    <span>Entrar</span>
+                </a>
+                <a href="#" class="user-action-link">
+                    <img src="../img/img_header/carrinho_logo.png" alt="Carrinho">
+                </a>
+            </nav>
+        </div>
+        <nav class="main-nav">
             <ul>
-                <li><a href="../index.html">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="Sobre.html">Sobre</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <h1>Novidades - PetShop Pelos & Patas</h1>
+        <p>
+            Fique por dentro da abertura da nossa loja Física, lançamento e promoções para seu pet.
+        </p>
         <article aria-labelledby="abertura-title">
             <h2 id="abertura-title">Abertura da nossa loja Física!</h2>
             <p>

@@ -11,39 +11,51 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html"><img src="img/logo-azul.png" alt="logo-pelo&patas"></a>
+    <header class="site-header">
+        <div class="header-main">
+            <div class="logo">
+                <img src="../img/logo-azul.png" alt="Pet Shop Logo" />
             </div>
-            <div class="nav-menu">
-                <a href="pages/Sobre.html">Sobre</a>
-                <a href="pages/produtos.html">Produtos</a>
-                <a href="pages/novidades.html">Novidades</a>
-                <a href="pages/contato.html">Contato</a>
+            <div class="search-bar">
+                <form action="/search" method="get" onsubmit="return false;">
+                    <input type="search" id="search-input" name="q" placeholder="O que você procura?">
+                    <button type="submit">Buscar</button>
+                </form>
             </div>
+            <nav class="user-actions">
+                <a href="#" class="user-action-link">
+                    <img src="../img/img_header/usuario_logo.png" alt="Entrar">
+                    <span>Entrar</span>
+                </a>
+                <a href="#" class="user-action-link">
+                    <img src="../img/img_header/carrinho_logo.png" alt="Carrinho">
+                </a>
+            </nav>
         </div>
-        <div class="container-busca">
-            <input placeholder="Pesquisar Produtos">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-    </nav>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <div class="secao-hero">
-            <img src="https://s.zst.com.br/cms-assets/2024/08/nome-para-cachorro-e-gato-1-.webp" alt="Cachorro e gato">
             <h2>Pelos & Patas</h2>
             <p>Os melhores cuidados para o seu Pet!</p>
         </div>
 
         <section class="value">
+            <h2>Produtos mais procurados</h2>
             <div class="value-produtos">
-                <h2>Produtos mais procurados</h2>
                 <div class="container-produtos">
 
-
                 </div>
-                <h2><a href="pages/produtos.html">Ver mais</a></h2>
+                <a href="pages/produtos.html"></a><button class="">Ver mais</button></a>
             </div>
         </section>
     </main>
@@ -52,6 +64,8 @@
         <p>&copy; <span id="ano"></span>PetShop Pelos & Patas - Todos os direitos reservados.</p>
         <p>Redes sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp</a></p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
