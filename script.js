@@ -39,6 +39,7 @@ function mostrarvalue() {
               <h3 class="nome-value">${prd.nome}</h3>
               <p class="descricao-value">${prd.descricao}</p>
               <p class="preco-value">R$ ${prd.preco}</p>
+              <button class="botao-value">Adicionar ao Carrinho</button>
            </div>
         </div>   
         `
@@ -50,3 +51,4 @@ function mostrarvalue() {
 }
 
 mostrarvalue()
+

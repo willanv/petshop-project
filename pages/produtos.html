@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - Pelos & Patas</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
 </head>
 
@@ -32,11 +33,11 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="novidades.html">Novidades</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/pages/Sobre.html">Sobre</a></li>
+                <li><a href="/pages/produtos.html">Produtos</a></li>
+                <li><a href="/pages/novidades.html">Novidades</a></li>
+                <li><a href="/pages/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -45,40 +46,68 @@
         <h1 class="page-title">Nossos Produtos</h1>
         <div class="product-showcase">
             <div class="product-card">
-                <img src="../img/img_produtos/areia-gato.png" alt="Areia para Gato">
-                <h3>Areia Higiênica para Gatos</h3>
-                <p class="price">R$ 25,00</p>
-                <button>Adicionar ao Carrinho</button>
+                <img src="/img/img_produtos/areia-gato.png" alt="Areia para Gato">
+                <div class="product-info">
+                    <h3 class="nome">Areia Higiênica para Gatos</h3>
+                    <p class="price">R$ 25,00</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
             </div>
             <div class="product-card">
-                <img src="../img/img_produtos/cantil.png" alt="Cantil">
-                <h3>Cantil de Água Portátil</h3>
-                <p class="price">R$ 15,00</p>
-                <button>Adicionar ao Carrinho</button>
+                <img src="/img/img_produtos/cantil.png" alt="Cantil">
+                <div class="product-info">
+                    <h3>Cantil de Água Portátil</h3>
+                    <p class="price">R$ 15,00</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
             </div>
             <div class="product-card">
-                <img src="../img/img_produtos/racao-pedigree-100g.png" alt="Ração Pedigree">
-                <h3>Ração Úmida Pedigree 100g</h3>
-                <p class="price">R$ 4,50</p>
-                <button>Adicionar ao Carrinho</button>
+                <img src="/img/img_produtos/racao-pedigree-100g.png" alt="Ração Pedigree">
+                <div class="product-info">
+                    <h3>Ração Úmida Pedigree 100g</h3>
+                    <p class="price">R$ 4,50</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
             </div>
             <div class="product-card">
-                <img src="../img/img_produtos/racao-whiskas-85g.png" alt="Ração Whiskas">
-                <h3>Ração Úmida Whiskas 85g</h3>
-                <p class="price">R$ 4,50</p>
-                <button>Adicionar ao Carrinho</button>
+                <img src="/img/img_produtos/racao-whiskas-85g.png" alt="Ração Whiskas">
+                <div class="product-info">
+                    <h3>Ração Úmida Whiskas 85g</h3>
+                    <p class="price">R$ 4,50</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
             </div>
             <div class="product-card">
-                <img src="../img/img_produtos/tapetes-higienicos.png" alt="Tapetes Higiênicos">
-                <h3>Tapetes Higiênicos (30 un.)</h3>
-                <p class="price">R$ 45,00</p>
-                <button>Adicionar ao Carrinho</button>
+                <img src="/img/img_produtos/tapetes-higienicos.png" alt="Tapetes Higiênicos">
+                <div class="product-info">
+                    <h3>Tapetes Higiênicos (30 un.)</h3>
+                    <p class="price">R$ 45,00</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="site-footer">
-
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PetShop Pelos & Patas</h4>
+                <p>Oferecendo produtos de qualidade e serviços de excelência em cuidado com os bichanos..</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p><i class="fa-solid fa-phone"></i> (21) 9999-9999</p>
+                <p><i class="fa-solid fa-envelope"></i> contato@Pelos&Patas.com.br</p>
+            </div>
+            <div class="footer-section">
+                <h4>Horário</h4>
+                <p>Segunda a Sexta: 8h às 18h</p>
+                <p>Sábado: 8h às 16h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; PetShop Pelos & Patas - Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script>
