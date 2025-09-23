@@ -52,3 +52,8 @@ function mostrarvalue() {
 
 mostrarvalue()
 
+$(document).ready(function(){
+      setTimeout(function(){
+          $(".secao-hero p").text("Bem-vindo à Pelos & Patas!");
+      }, 2000);
+  });
