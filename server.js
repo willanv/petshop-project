@@ -33,11 +33,11 @@ db.connect(err => {
 app.use(express.static(path.join(__dirname)));
 
 app.post("/cadastro", (req, res) => {
-    const { username, password } = req.body;
+    const { username, password, email } = req.body;
 
     db.query(
-        "INSERT INTO USUARIOS (nome, SENHA) VALUES (?, ?)",
-        [username, password],
+        "INSERT INTO USUARIOS (NOME, SENHA, EMAIL) VALUES (?, ?, ?)",
+        [username, password, email],
         (err) => {
             if (err) {
                 console.error(err);
